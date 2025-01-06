@@ -1,10 +1,10 @@
 name: Build ksud
 on:
-  workflow_call:
+  watch:
     inputs:
       target:
         required: true
-        type: string
+        type: [started]
       os:
         required: false
         type: string
